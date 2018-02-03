@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff8f6"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.muchu.way2shop.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icon"
+            />
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Real Time"
+            android:textColor="#447400" />
+
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="italic"
+            android:textColor="#52323d"
+            android:text="Sign in"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+
+            <EditText
+                android:id="@+id/et_email_login"
+                android:background="@drawable/edit_text"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="  Email"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+
+
+            <EditText
+                android:id="@+id/et_password_login"
+                android:background="@drawable/edit_text"
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:layout_height="40dp"
+                android:hint=" PASSWORD"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp">
+
+            <Button
+                android:id="@+id/bt_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/but"
+                android:text="Login"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or sign in with:"
+            android:textColor="#011f4b"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:textSize="15sp"/>
+
+        <RelativeLayout
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/sign_in_with_google"
+                android:layout_centerHorizontal="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/google_icon"/>
+
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_weight="1"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:paddingBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#52323d"
+                android:onClick="NewAccount"
+                android:textSize="15sp"
+                android:text="Don't Have An Account ?"
+                />
+
+            <TextView
+                android:id="@+id/tv_forgot_password"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#52323d"
+                android:textSize="15sp"
+                android:text="Forgot Password"
+
+                />
+            <ProgressBar
+                android:id="@+id/progressBar_Login"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/sign_in_with_google"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
+
+
